@@ -1,0 +1,56 @@
+﻿#welcometoapp {
+    font-weight: bold;
+    font-size: large;
+    color: white;
+   
+    
+}
+#backa {
+    background-color: white;
+}
+#login {
+    background-color: white;
+    
+    
+}
+#password {
+    background-color: white;
+}
+.but {
+    background-color: red;
+width:200;
+
+
+}
+#checkb{
+    color:white;
+    font-size:10;
+  margin-bottom:20;
+
+}
+#remember{
+   color:white;
+   font-size:15;
+
+}
+#forgot {
+    color: white;
+    font-size: 15;
+    
+}
+#slideone{
+    
+    color:white;
+ 
+    
+}
+#loginwindow{ 
+    border-radius:5;
+    width:200;
+    height:250;
+
+}
+#pickeritems{
+    background-color:aqua;
+    height:50;
+}

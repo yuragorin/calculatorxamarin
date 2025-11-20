@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculator.Welcome"
+             StyleId="backa" >
+    <ContentPage.Resources>
+        <StyleSheet Source="/StyleSheet1.css" />
+    </ContentPage.Resources>
+   
+
+
+
+        
+        <Grid>
+        <StackLayout Orientation="Vertical">
+          
+       
+        <StackLayout Orientation="Vertical">
+                
+                <StackLayout Orientation="Horizontal">
+
+                    <Slider 
+     WidthRequest="100" 
+  MinimumTrackColor="CornflowerBlue" MaximumTrackColor="Gray"
+           ></Slider>
+
+               
+
+                        <Picker WidthRequest="100" StyleId="pickeritems"   >
+                        <Picker.Items>
+                            <x:String>C#</x:String>
+                            <x:String>C/C++</x:String>
+                            <x:String>JavaScript</x:String>
+                            <x:String>PHP</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <StackLayout Orientation="Vertical" >
+                        <StackLayout Orientation="Horizontal">
+
+                            <Switch></Switch>
+                            <Switch></Switch>
+                            <RadioButton></RadioButton>
+
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+
+                            <Switch></Switch>
+                            <Switch></Switch>
+                            <RadioButton></RadioButton>
+                            
+
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+
+                            <Switch></Switch>
+                            <Switch></Switch>
+                            <CheckBox></CheckBox>
+                            
+
+                        </StackLayout>
+                       
+
+
+                    </StackLayout>
+
+                </StackLayout>
+      
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+
+
+                <Slider 
+                WidthRequest="100" 
+             MinimumTrackColor="CornflowerBlue" MaximumTrackColor="Gray"
+                      ></Slider>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Slider 
+   WidthRequest="100" 
+MinimumTrackColor="CornflowerBlue" MaximumTrackColor="Gray"></Slider>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Slider 
+   WidthRequest="100" 
+MinimumTrackColor="CornflowerBlue" MaximumTrackColor="Gray"></Slider>
+            </StackLayout>
+
+
+        </StackLayout>
+
+        <Frame BackgroundColor="Gray" 
+               
+               
+                
+                HorizontalOptions="Start"
+                VerticalOptions="End"
+        
+                   StyleId="loginwindow"
+                   >
+              
+                    <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+
+                        <Label Text="Welcome" StyleId="welcometoapp"></Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"  >
+
+                        <Entry StyleId="login"
+                              
+                       WidthRequest="200"
+                 
+                      Placeholder="login"
+                         x:Name="Log"
+                       
+                        ></Entry>
+
+
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal"  >
+
+                        <Entry StyleId="password"
+                                IsPassword="True"
+            WidthRequest="200"
+            
+                        Placeholder="password"
+                       x:Name="Pass"
+                       
+             ></Entry>
+
+                    
+
+
+                </StackLayout>
+                <Button StyleClass="but"
+        HorizontalOptions="CenterAndExpand"
+Text="Log in"
+
+ TextColor="White"
+
+Margin="20"
+    Clicked="Button_Clicked"></Button>
+
+               
+                    <StackLayout Orientation="Horizontal" >
+
+                        <CheckBox Color="White" StyleId="checkb" Margin="0,0,0,0" ></CheckBox>
+                    <Label Text="remember me"  StyleId="remember" Margin="0,5,0,0" ></Label>
+                    <Label Text="i forgot!"  HorizontalOptions ="EndAndExpand" Margin="0,5,0,0"
+                       StyleId="forgot"></Label>
+                
+                </StackLayout>
+            
+
+
+
+
+
+
+
+                </StackLayout>
+            </Frame>
+        </Grid>
+    
+</ContentPage>

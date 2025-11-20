@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculator.Page1"
+             Title="Кредитный калькулятор">
+    <ContentPage.Content>
+
+
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" 
+      >
+                <Label Text="Сумма кредита:" 
+    VerticalOptions="Center"/>
+                <Entry x:Name="AmountEntry" 
+    VerticalOptions="Center"
+    HorizontalOptions="FillAndExpand"
+    Placeholder="Введите сумму"
+                       Keyboard="Numeric"
+                       TextChanged="AmountEntry_TextChanged"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Срок(месяцев):" 
+VerticalOptions="Center"
+                       />
+                <Entry x:Name="MounthEntry"
+                       HorizontalOptions="FillAndExpand"
+                        Keyboard="Numeric"></Entry>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Вид платежа:">
+                    
+                    
+                </Label>
+                <Picker
+                    x:Name="PickVid"
+                    HorizontalOptions="FillAndExpand"
+                    >
+                    <Picker.Items>
+                        <x:String>Аннуитетный</x:String>
+                        <x:String>другой</x:String>
+          
+                    </Picker.Items>
+                </Picker>
+           
+                       
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Процентная ставка:"></Label>
+                <Slider HorizontalOptions="FillAndExpand" Minimum="0" Maximum="1"
+                        MinimumTrackColor="DeepPink" MaximumTrackColor="Gray" ThumbColor="DeepPink"
+                        ValueChanged="slider_ValueChanged"
+                        x:Name="Sliderr">
+                    
+                </Slider>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="slide" HorizontalOptions="Center" x:Name="Procent"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Ежемесячный платеж:" HorizontalOptions="Center" ></Label>
+                <Label Text="---" HorizontalOptions="Center" x:Name="MountPay" ></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Общая сумма:" HorizontalOptions="Center" ></Label>
+                <Label Text="---" HorizontalOptions="Center" x:Name="Summ"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Переплата:" HorizontalOptions="Center" ></Label>
+                <Label Text="---" HorizontalOptions="Center" x:Name="Pereplata"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button HorizontalOptions="Fill" Clicked="Button_Clicked" ></Button>
+            </StackLayout>
+
+
+
+        </StackLayout>
+
+
+
+
+    </ContentPage.Content>
+</ContentPage>

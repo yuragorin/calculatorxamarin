@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculator.Page2"
+             Title="Курсы валют">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Центробанк РФ">
+                
+            </Label>
+                <Label Text="Текущая дата:">
+                    
+
+                </Label>
+                <DatePicker DateSelected="DatePicker_DateSelected">
+                    <DatePicker.MinimumDate>01/01/2025</DatePicker.MinimumDate>
+                    <DatePicker.MaximumDate>01/06/2025</DatePicker.MaximumDate>
+                </DatePicker>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+
+                <Label Text="USD"></Label>
+                <Label Text="-" x:Name="Dollar"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+
+                <Label Text="EUR"></Label>
+                <Label Text="-" x:Name="Euro"></Label>
+            </StackLayout>
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

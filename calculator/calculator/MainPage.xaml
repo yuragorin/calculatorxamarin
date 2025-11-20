@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="calculator.MainPage"
+             xmlns:local="clr-namespace:calculator;assembly=calculator">
+
+
+  
+    <TabbedPage.Children>
+            <local:Page1 />
+            <local:Page2 />
+    
+        </TabbedPage.Children>
+    
+ 
+
+</TabbedPage>
