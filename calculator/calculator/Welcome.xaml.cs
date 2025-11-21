@@ -1,11 +1,11 @@
-﻿using System;
+﻿using Sharpnado.Presentation.Forms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using Sharpnado.Presentation.Forms;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -33,9 +33,12 @@ namespace calculator
             }
 			else
 			{
+
+           
+                
+                Navigation.PushModalAsync(new Page4(login,pas));
                 login = null;
                 pas = null;
-                Navigation.PushAsync(new MainPage());
             }
 
         }

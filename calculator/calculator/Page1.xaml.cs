@@ -6,17 +6,27 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace calculator
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Page1 : ContentPage
     {
+        private string login;
+        private string pas;
+
         public Page1()
         {
             InitializeComponent();
         }
+
+        public Page1(string login, string pas)
+        {
+            InitializeComponent();
+            this.login = login;
+            this.pas = pas;
+        }
+
         void slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             if (Procent != null)

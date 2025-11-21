@@ -7,8 +7,7 @@
 
 
         <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Horizontal" 
-      >
+            <StackLayout Orientation="Horizontal">
                 <Label Text="Сумма кредита:" 
     VerticalOptions="Center"/>
                 <Entry x:Name="AmountEntry" 
@@ -28,8 +27,8 @@ VerticalOptions="Center"
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Вид платежа:">
-                    
-                    
+
+
                 </Label>
                 <Picker
                     x:Name="PickVid"
@@ -38,11 +37,11 @@ VerticalOptions="Center"
                     <Picker.Items>
                         <x:String>Аннуитетный</x:String>
                         <x:String>другой</x:String>
-          
+
                     </Picker.Items>
                 </Picker>
-           
-                       
+
+
             </StackLayout>
             <StackLayout Orientation="Horizontal">
                 <Label Text="Процентная ставка:"></Label>
@@ -50,7 +49,7 @@ VerticalOptions="Center"
                         MinimumTrackColor="DeepPink" MaximumTrackColor="Gray" ThumbColor="DeepPink"
                         ValueChanged="slider_ValueChanged"
                         x:Name="Sliderr">
-                    
+
                 </Slider>
 
             </StackLayout>
@@ -76,9 +75,12 @@ VerticalOptions="Center"
 
 
         </StackLayout>
+        
 
+    
 
 
 
     </ContentPage.Content>
+   
 </ContentPage>
